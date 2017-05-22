@@ -1,0 +1,30 @@
+{
+  "name": "mock-swagger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "swagger": "nodemon api/swagger/mockSwaggerApi.js",
+    "swagger-edit": "swagger project edit",
+    "swagger-docs": "npm run swagger-json && http-server api/swagger/docs -o",
+    "swagger-json": "js-yaml api/swagger/swagger.yaml > api/swagger/docs/swagger.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeBelt/mock-swagger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codeBelt/mock-swagger/issues"
+  },
+  "homepage": "https://github.com/codeBelt/mock-swagger#readme",
+  "devDependencies": {
+    "http-server": "^0.10.0",
+    "js-yaml": "^3.8.4",
+    "nodemon": "^1.11.0",
+    "swagger": "^0.7.5",
+    "swagger-editor": "^3.0.11",
+    "swagger-server": "^1.0.0-alpha.18"
+  }
+}
