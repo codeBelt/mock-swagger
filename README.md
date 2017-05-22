@@ -1,4 +1,5 @@
 # mock-swagger
+Simple mock swagger api with swagger file editing and generating swagger docs.
 
 ### Swagger Mock Api
 ```npm run swagger```
